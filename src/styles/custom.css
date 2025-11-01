@@ -1,0 +1,125 @@
+/* Police globale */
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 600;
+}
+
+/* Header - Liens en majuscules */
+.navbar .nav-link {
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+/* Lien actif dans le menu */
+.navbar .nav-link.active {
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+}
+
+/* Liens au survol */
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Cards - Effet au survol */
+.card {
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  background-color: #efefef !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Boutons - Effet au survol */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  filter: brightness(0.85);
+  transform: scale(1.05);
+}
+
+/* Footer - Icônes réseaux sociaux */
+.social-icon {
+  transition: all 0.3s ease;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.social-icon:hover {
+  color: white !important;
+  transform: scale(1.2);
+}
+
+/* Footer - Liens */
+.footer-link {
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-link:hover {
+  font-weight: 600;
+  color: inherit;
+}
+
+/* Hero section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+/* Progress bars personnalisées */
+.progress {
+  height: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 70vh;
+  }
+}
